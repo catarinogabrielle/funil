@@ -1,0 +1,226 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@100;200;300;400;500;600;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+
+    @media (max-width: 1080px) {
+        background-color: #fff;
+    }
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    z-index: 1;
+
+    @media (min-width: 1081px) {
+        padding: 20px 15px 80px 15px;
+    }
+
+    @media (max-width: 1080px) {
+        padding: 8px 15px;
+    }
+}
+
+header .box-title {
+    display: flex;
+    width: 100%;
+    max-width: 900px;
+
+    @media (min-width: 1081px) {
+        font-family: cursive;
+    }
+
+    @media (max-width: 1080px) {
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+header .box-title a {
+    text-decoration: none;
+}
+
+header .box-title a h1 {
+    font-size: 35px;
+    font-weight: 200;
+    text-transform: uppercase;
+
+    @media (max-width: 1080px) {
+        font-size: 22px;
+    }
+}
+
+main {
+    display: flex;
+    width: 1080px;
+    max-width: 900px;
+    margin-top: 35px;
+    padding: 30px 50px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #fff;
+    flex-direction: column;
+
+    @media (min-width: 1081px) {
+        top: -100px;
+        position: relative;
+        z-index: 99;
+        box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.1);
+    }
+
+    @media (max-width: 1080px) {
+        width: 100%;
+        padding: 10px 30px 80px 30px;
+        margin-top: 0;
+    }
+}
+
+main h1 {
+    font-size: 43px;
+    color: #3e3e3e;
+    font-weight: 200;
+    margin: 10px 0 0 0;
+
+    @media (max-width: 1080px) {
+        font-size: 26px;
+    }
+}
+
+main h2 {
+    font-size: 27px;
+    color: #3e3e3e;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+
+    @media (max-width: 1080px) {
+        font-size: 20px;
+    }
+}
+
+main h3 {
+    font-size: 20px;
+    color: #3e3e3e;
+    font-weight: 800;
+    margin: 10px 0 0 0;
+
+    @media (max-width: 1080px) {
+        font-size: 15px;
+    }
+}
+
+main img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 6px;
+    margin-top: 14px;
+}
+
+main p {
+    font-size: 20px;
+    line-height: 1.6em;
+    color: #3e3e3e;
+    font-weight: 100;
+
+    @media (max-width: 1080px) {
+        font-size: 16px;
+        line-height: 1.3em;
+    }
+}
+
+main .box-btn {
+    display: flex;
+    margin: 10px 0 20px 0;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+main .box-btn .btn {
+    padding: 0 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 30px;
+    height: 70px;
+    width: max-content;
+    cursor: pointer;
+    border-radius: 6px;
+    transition: 0.4s;
+    margin: 13px 0 0 10px;
+    border: none;
+    text-align: center;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 1080px) {
+        font-size: 26px;
+        margin: 7px 0 0 10px;
+    }
+}
+
+main .box-btn .btn:hover {
+    box-shadow: 1px 1px 6px 3px rgba(0,0,0,0.2);
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 15px;
+
+    @media (max-width: 1080px) {
+        padding: 8px 15px;
+        margin-top: 50px;
+        bottom: 0;
+        position: fixed;
+        text-align: center;
+    }
+}
+
+footer .content-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 900px;
+}
+
+footer .content-footer text {
+    font-size: 15px;
+    color: #f1f1f1;
+
+    @media (max-width: 1080px) {
+        font-size: 12px;
+    }
+}
+
+footer .content-footer a {
+    font-size: 15px;
+    color: #b0aeae;
+    margin-top: 10px;
+    text-decoration: none;
+    transition: 0.2s;
+
+    @media (max-width: 1080px) {
+        font-size: 12px;
+    }
+}
+
+footer .content-footer a:hover {
+    text-decoration: underline;
+    color: #f1f1f1;
+}
