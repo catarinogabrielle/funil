@@ -255,3 +255,44 @@ footer .content-footer a:hover {
     text-decoration: underline;
     color: #f1f1f1;
 }
+
+main .result-page {
+    width: 80%;
+    margin: 50px auto 0 auto;
+    font-family: Arial, sans-serif;
+}
+
+@media only screen and (max-width: 1080px) {
+    main .result-page {
+        width: 100%;
+        margin: 20px auto 0 auto;
+    }
+}
+
+main .result-page h1 {
+    font-size: 33px;
+    color: #3e3e3e;
+    font-weight: 600;
+    margin: 0 0 30px 0;
+}
+
+@media only screen and (max-width: 1080px) {
+    main .result-page h1 {
+        font-size: 24px;
+        margin: 20px 0 10px 0;
+    }
+}
+
+main .result-page .score-section,
+main .result-page .interpretation-section,
+main .result-page .advice-section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+#score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #3e3e3e;
+}
